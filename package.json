@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
     "start": "nodemon src/index.ts",
     "build": "rimraf dist && tsc",
@@ -12,10 +12,11 @@
   },
   "pre-commit": [
     "ts.check",
-    "build && npm run add-build"
+    "build",
+    "add-build"
   ],
   "keywords": [],
-  "author": "Sourav Roy",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
