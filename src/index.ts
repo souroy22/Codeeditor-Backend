@@ -12,7 +12,7 @@ import { corsOptions } from "./configs/corsConfig";
 import configureSocketEvents from "./sockets/index";
 
 const app = express();
-const PORT: string = process.env.PORT || "8000";
+const PORT: string = process.env.PORT || "5000";
 dotenv.config();
 
 declare global {
