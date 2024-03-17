@@ -28,10 +28,12 @@ app.use(express.json({ limit: "10kb" }));
 app.use(cors(corsOptions));
 app.use(morgan("dev"));
 app.use(cookieParser());
+connectDB();
+
 app.get("/", (_: Request, res: Response) => {
   res.send("Hello World HIIII!");
 });
-connectDB();
+
 app.use("/api/v1", router);
 
 const server = app.listen(parseInt(PORT, 10), `0.0.0.0`, () => {
