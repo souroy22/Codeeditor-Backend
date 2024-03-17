@@ -31,7 +31,7 @@ app.use(cookieParser());
 connectDB();
 
 app.get("/", (_: Request, res: Response) => {
-  res.send("Hello World check!");
+  res.send("Hello World!");
 });
 
 app.use("/api/v1", router);
