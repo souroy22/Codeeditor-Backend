@@ -12,8 +12,7 @@
   },
   "pre-commit": [
     "ts.check",
-    "build",
-    "add-build"
+    "build && npm run add-build"
   ],
   "keywords": [],
   "author": "Sourav Roy",
