@@ -29,7 +29,7 @@ app.use(cors(corsOptions));
 app.use(morgan("dev"));
 app.use(cookieParser());
 app.get("/", (_: Request, res: Response) => {
-  res.send("Hello World!");
+  res.send("Hello World HIIII!");
 });
 connectDB();
 app.use("/api/v1", router);
